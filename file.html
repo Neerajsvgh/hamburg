@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        svg{
+            width: 50px;
+            height: 50px;
+            border-radius: 6px;
+            
+        }
+        
+        
+        .child{
+            width: 230px;
+            height: 132px;
+            background-color: lightgrey;
+            border-radius: 10px;
+            display: flex;
+        }
+        p{
+            font-size: 20px;
+            font-weight: 800;
+            letter-spacing: 1px;
+            padding: 20px;
+            padding-top: 25px;
+        }
+       
+        
+       
+       .img{
+        padding-left: 50px;
+        height: 130px;
+        vertical-align: top;
+        
+       }
+       .container{
+        background-color: rgb(237, 243, 219);
+        margin-top: 20px;
+        width: 350px;
+        height: 500px;
+        border-radius: 10px;
+        position: relative;
+        left: -360px;
+        overflow:hidden;
+
+    
+        
+       transition: left 0.4s ease-out;
+        
+        
+       }
+       section{
+        position: relative;
+        left: 55px;
+        top: 20px;
+       }
+       img{
+        height: 131px;
+        border-radius: 10px;
+        
+       }
+       article{
+        margin-top: 20px;
+       }
+       .img2{
+        padding-left: 21px;
+       }
+       .img3{
+        padding-left:21px ;
+       }
+       #box{
+        display:none;
+       }
+       #box:checked ~ .container {
+        left: 0px;
+       }
+       
+        
+       
+      
+    </style>
+</head>
+<body>
+   
+    <label for="box"><svg xmlns="http://www.w3.org/2000/svg"  height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"></svg></label>
+    
+        <input type="checkbox" id="box">
+<br>
+        
+    <b>Categories</b> 
+    <div class="container">
+        <section>
+        <div class="child men">
+            <p>Men</p>
+            <div class="img">
+                <img src="./images.jpeg" alt="">
+            </div>
+           
+            
+        
+        
+            
+        </div>
+        <article>
+            <div class="child Women">
+                <p>Women</p>
+                <div class="img img2">
+                    <img src="./women1.jpeg" alt="">
+                </div>
+            </article>
+            <article>
+                <div class="child Kids">
+                    <p>Kids</p>
+                    <div class="img img3">
+                        <img src="./kids1.jpeg" alt="">
+                    </div>
+            </article>
+
+        </section>
+        
+    </div>
+    
+    
+</body>
+</html>
